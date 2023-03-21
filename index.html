@@ -447,30 +447,90 @@
         </div>
       </div>
     </footer>
-    <div class="modal-backdrop is-hidden" data-modal>
+    <!-- вставити   в div is-hidden -->
+    <div class="modal-backdrop" data-modal>
       <div class="modal-modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="modal-close-btn-icon" width="8" height="8">
-            <use
-              href="./images/icons-optymisov.svg#icon-close-black-18dp"
-            ></use>
-          </svg>
-        </button>
-        <div class="modal-grup">
-          <h3 class="modal-grup-text">
-            Leave your contacts and we will call you back
-          </h3>
-          <form class="modal-contact-form">
-            <input type="text" class="modal-contact-form-input" />
-            <input type="text" class="modal-contact-form-input" />
-            <input type="text" class="modal-contact-form-input" />
-          </form>
-          <h4 class="modal-grup-text-privacy">
-            I accept the terms and conditions of the Privacy Policy
-          </h4>
-          <button type="button" class="hero-image-btn hero-button modal-button">
-            Sand
+        <div>
+          <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-btn-icon" width="8" height="8">
+              <use
+                href="./images/icons-optymisov.svg#icon-close-black-18dp"
+              ></use>
+            </svg>
           </button>
+        </div>
+
+        <div class="modal-grup">
+          <p class="modal-grup-text">
+            Leave your contacts and we will call you back
+          </p>
+          <form class="modal-contact-form">
+            <div>
+              <label for="names" class="modal-label-text">
+                <span>Name*</span>
+                <div class="modal-form-control">
+                  <input
+                    type="text"
+                    class="modal-contact-form-input"
+                    placeholder="name"
+                    name="fullname"
+                    id="names"
+                    required
+                    pattern="^[a-zA-Zа-яА-Я]+$"
+                    minlength="2"
+                  />
+                  <svg class="modal-icon" width="22" height="24">
+                    <use
+                      href="./images/icons-optymisov.svg#icon-person-black-18dp-1"
+                    ></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+
+            <label for="phone" class="modal-label-text">Phone*</label>
+            <input
+              type="tel"
+              class="modal-contact-form-input"
+              placeholder="telefon"
+              name="phone"
+              id="phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+            />
+            <label for="email" class="modal-label-text">Email</label>
+            <input
+              type="email"
+              class="modal-contact-form-input"
+              placeholder="email"
+              name="email"
+              id="email"
+            />
+            <label for="comment" class="modal-label-text">Comment</label>
+            <textarea
+              name="user_message"
+              class="modal-for-message"
+              placeholder="Text input"
+              id="comment"
+            ></textarea>
+
+            <input
+              type="checkbox"
+              name="user_policy"
+              id="user-policy"
+              class="modal-form-check"
+            />
+            <label for="user-policy" class="modal-form-check-privacy">
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+            <div>
+              <button type="submit" class="modal-image-btn modal-button">
+                <p class="modal-text-btn">Send</p>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
