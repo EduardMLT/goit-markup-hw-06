@@ -444,8 +444,9 @@
               </li>
             </ul>
           </div>
+
           <div class="footer-subscribe">
-            <form class="modal-contact-form">
+            <form class="footer-subscribe-contact-form">
               <div>
                 <label for="email-foot" class="footer-subscribe-label">
                   <span class="footer-subscribe-label-text">Subscribe</span>
@@ -455,17 +456,12 @@
                       class="footer-subscribe-form-input"
                       placeholder="E-mail"
                       name="email"
-                      id="email-foot"
-                      
+                      id="email-foot"                      
                     />
                   </label>
-                  <div>
+                  <div class="footer-subscribe-grop">
                     <button type="submit" class="footer-subscribe-btn footer-subscribe-button">
                       <p class="footer-subscribe-text-btn">Subscribe</p>
-
-
-
-
                       <svg class="footer-subscribe-btn-icon" width="24" height="24">
                         <use
                           href="./images/icons-optymisov.svg#icon-subscribe"
@@ -563,7 +559,7 @@
               </label>
             </div>
 
-            <div>
+           
               <label for="comment" class="modal-label-text">Comment</label>
               <textarea
                 name="user_message"
@@ -571,17 +567,16 @@
                 placeholder="Text input"
                 id="comment"
               ></textarea>
-            </div>
+            
 
             <div>
               <input
                 type="checkbox"
                 name="user_policy"
                 id="user-policy"
-                class="modal-form-check"
+                class="modal-form-check visually-hidden"
               />
-              <label for="user-policy" class="modal-form-check-privacy">
-                I accept the terms and conditions of the
+              <label for="user-policy" class="modal-form-check-privacy">I accept the terms and conditions of the&nbsp;
                 <a href="">Privacy Policy</a>
               </label>
             </div>
