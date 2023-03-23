@@ -928,7 +928,8 @@ ul {
 }
 
 .modal-form-check:checked + .modal-form-check-privacy::before{
-        background-image: url(/images/Property-click.svg);
+    background-image: url(../images/Property-click.svg);
+    transition: var(--semofor-button-grunt);
 }
 
 .modal-form-check:hover + .modal-form-check-privacy::before,
