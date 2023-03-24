@@ -792,8 +792,7 @@ ul {
 
 .modal-close-btn-icon{    
     background: #E7E9FC;
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
-    outline: none;
+    /* outline: none; */
     transition: var(--semofor-button-grunt);
 }
 
