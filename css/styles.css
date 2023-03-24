@@ -612,6 +612,7 @@ ul {
 .footer-subscribe-btn-icon{
     background-color: var(--color-logo-button);
     fill: #ffffff;
+    transition: var(--semofor-button-grunt);
 }
 
 .footer-subscribe-button{
@@ -663,7 +664,7 @@ ul {
     color: var(--color-logo-button);
     border-color: 1px solid var(--footer-text-color);
     cursor: pointer;
-    transition: background-color var(--semofor-button-grunt), color var(--semofor-button-grunt), border-color var(--semofor-button-grunt);
+    transition: var(--semofor-button-grunt);
 }
 
 .prtf-button-grunt:hover,
@@ -916,6 +917,11 @@ ul {
     margin-bottom: 24px;
 }
 
+.modal-form-check-privacy-line{
+    text-decoration-line: underline;
+    color: #4D5AE5;
+}
+
 .modal-form-check-privacy::before{
     display: block;
     width: 16px;
@@ -935,7 +941,7 @@ ul {
 .modal-form-check:hover + .modal-form-check-privacy::before,
 .modal-form-check:focus + .modal-form-check-privacy::before{
     outline: 1.25px solid #9747FF;
-    transition: var(--semofor-button-grunt);
+    transition:  var(--semofor-button-grunt);
 }
 
 .modal-image-btn{    
