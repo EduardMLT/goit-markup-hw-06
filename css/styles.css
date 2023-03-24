@@ -115,7 +115,7 @@ ul {
 }
 
 .container{
-    width: 1158px;
+    max-width: width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -787,23 +787,27 @@ ul {
     height: 24px;
     width: 24px;
     cursor: pointer;
+    transition: var(--semofor-button-grunt);
 }
 
-.modal-close-btn-icon{
-    
+.modal-close-btn-icon{    
     background: #E7E9FC;
-    border: 1px solid rgba(0, 0, 0, 0.1)
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    outline: none;
+    transition: var(--semofor-button-grunt);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus{
     border-color: var(--color-button-link);
+    background-color: var(--color-button-link);
 }
 
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon{
-    fill: var(--color-button-link);
-}
+.modal-close-btn:hover  .modal-close-btn-icon,
+.modal-close-btn:focus  .modal-close-btn-icon{
+    background-color: var(--color-button-link);
+    fill: var(--footer-text-color);
+} 
 
 .modal-backdrop.is-hidden{
     visibility: hidden;
